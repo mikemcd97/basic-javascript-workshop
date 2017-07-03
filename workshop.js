@@ -102,9 +102,16 @@ function longestWord(inputString) {
         
     }
 }
-console.log(longestWord("hello you craaaaaaaazy guy"));
-function capitalize(inputString) {
 
+function capitalize(inputString) {
+  var lowInputString = inputString.toLowerCase();
+  var arr = lowInputString.split(" ");
+  var newArr = [];
+  for (var i = 0; i < arr.length; i++){
+     newArr.push(arr[i].charAt(0).toUpperCase()+arr[i].slice(1));
+  }
+  return newArr.join(' ');
+  
 }
 
 function sumOfNumbers(arrayOfNumbers) {

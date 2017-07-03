@@ -115,9 +115,19 @@ function capitalize(inputString) {
 }
 
 function sumOfNumbers(arrayOfNumbers) {
-
+    var sum = 0;
+   
+    for(var i = 0; i<arrayOfNumbers.length; i++){
+        sum = arrayOfNumbers[i] +sum;
+        
+    }
+    if(typeof sum === 'number'){
+        return sum;
+    }
+    else{
+        return;
+    }
 }
-
 function uniqueElements(array1, array2) {
 
 }

@@ -129,11 +129,19 @@ function sumOfNumbers(arrayOfNumbers) {
     }
 }
 function uniqueElements(array1, array2) {
-
+    var uArr = [];
+       
 }
-
 function isPalindrome(inputString) {
-
+    var pal = inputString.split('').reverse().join('').toLowerCase();
+    var pal1 = pal.replace(/[^0-9a-z]/gi, '');
+    var pal2 = inputString.replace(/[^0-9a-z]/gi, '').toLowerCase();
+    if(pal2 === pal1){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
 function wrapCharacter(inputString) {

@@ -1,9 +1,20 @@
 function firstLetter(inputString) {
-
+    if(inputString === undefined){
+        return undefined;
+    }
+    else{
+        return inputString[0];
+    }
 }
 
 function lastLetter(inputString) {
-
+     if(inputString === undefined){
+        return undefined;
+    }
+    else{
+        
+        return inputString[4];
+    }
 }
 
 function letterAtPosition(inputString, position) {

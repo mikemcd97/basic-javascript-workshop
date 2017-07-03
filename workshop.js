@@ -128,10 +128,29 @@ function sumOfNumbers(arrayOfNumbers) {
         return;
     }
 }
-function uniqueElements(array1, array2) {
-    var uArr = [];
-       
-}
+ function uniqueElements(array1, array2) {
+    if (Array.isArray(array1) && Array.isArray(array2)){
+        var uArr = array1.concat(array2);
+        var sorted = uArr.sort();
+        for (var i = 0; i<sorted.length; i++){
+            if(sorted[i]===sorted[i + 1]){
+                sorted.splice(i,2);
+                i=0;
+            }
+            else if(sorted.length ===2 && sorted[0] === sorted[1]){
+                sorted.splice(0,2);
+            }
+            
+
+    }
+        return sorted;
+ }
+    else{
+        return undefined;
+        
+    }
+ }
+console.log(uniqueElements([1,2,3], [1,2,3]));
 function isPalindrome(inputString) {
     var pal = inputString.split('').reverse().join('').toLowerCase();
     var pal1 = pal.replace(/[^0-9a-z]/gi, '');
@@ -145,7 +164,7 @@ function isPalindrome(inputString) {
 }
 
 function wrapCharacter(inputString) {
-
+    
 }
 
 function wrapWord(inputString) {
@@ -153,7 +172,11 @@ function wrapWord(inputString) {
 }
 
 function bubbleSort(arrayOfNumbers) {
-
+    for (var i = 0; i<arrayOfNumbers.length; i++){
+        if (arrayOfNumbers[i]>(arrayOfNumbers[i] - 1)){
+            
+        }
+    }
 }
 
 /***** DO NOT EDIT AFTER THIS LINE *****/

@@ -12,17 +12,25 @@ function lastLetter(inputString) {
         return undefined;
     }
     else{
-        
-        return inputString[4];
+        var ans = (inputString.length - 1);
+        return inputString[ans];
     }
 }
 
 function letterAtPosition(inputString, position) {
-
+    if(inputString===undefined){
+        return;
+    }
+    else{
+        return inputString[position];
+    }
 }
 
 function addTwoNumbers(num1, num2) {
-
+    var ans = (num1 + num2);
+    if(typeof ans === 'number'){
+        return ans;
+    }
 }
 
 function multiplyTwoNumbers(num1, num2) {
